@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -25,6 +26,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -52,9 +55,11 @@ button {
   transition: border-color 0.25s;
   margin-top: 10px;  
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: #171fb0;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -72,6 +77,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
 .App {
   display: flex;
   justify-content: center;
@@ -79,6 +85,7 @@ button:focus-visible {
   width: 100vw;
   height: 100vh;
 }
+
 .light {
   background-color: white;
   color: black;
@@ -93,3 +100,31 @@ button:focus-visible {
   width: 300px;
 }
 
+.Calculadora {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.offButton {
+  background-color: rgb(214, 67, 101);
+}
+
+.onButton {
+  background-color: rgb(208, 160, 220);
+}
+
+.linkButton,
+.buttonsReset {
+  width: 100%;             
+  height: 100%;            
+  display: flex;            
+  align-items: center;      
+  justify-content: center;   
+  font-size: 1em;           
+  overflow: hidden;         
+  white-space: nowrap;      
+  text-align: center;       
+  padding: 0;              
+  box-sizing: border-box;   
+}
